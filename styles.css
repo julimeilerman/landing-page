@@ -45,14 +45,12 @@ ul{
     /*Code for the main title, subtext, button and image*/
 .header-bottom{
     flex:2;
-
     display: flex;
     justify-content:center;
 
 }
 
 .header-left{
-
     width: 400px;
     flex-flow: column wrap;
     flex-shrink: 1;
@@ -81,7 +79,6 @@ h1{
     color: #E5E7EB;
     width: 400px;
     height: 150px;
-
     display: flex;
     padding: 80px;
     justify-content: center;
