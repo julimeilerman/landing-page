@@ -78,7 +78,7 @@ h1{
     background: grey;
     color: #E5E7EB;
     width: 400px;
-    height: 150px;
+    height: 150px; 
     display: flex;
     padding: 80px;
     justify-content: center;
