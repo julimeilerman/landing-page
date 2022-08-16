@@ -1,24 +1,29 @@
 body{
     display: flex;
-    height: 500px;
+    flex-flow: column wrap;
     margin: 0;
     padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
     /*-----CODE FOR THE TOP SECTION------*/
 .header{
+    height: 500px;
     background: #1F2937;
     flex:1;
     display: flex;
     flex-direction: column;
-    padding: 8px 200px;
+    justify-content: flex-start;
+    padding: 0px 169px;
+    gap: 80px;
+    padding-bottom: 120px;
 }
 
     /*Code for the header logo and links*/
 .header-top{
-    /*border:2px solid yellow;*/
     display: flex;
     flex-shrink:2;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 16px;
 }
 
@@ -36,7 +41,6 @@ ul{
     list-style: none;
 }
 .links{
-    /*border: 2px solid green;*/
     display: flex;
     justify-content: space-around ;
     flex:1;
@@ -46,41 +50,97 @@ ul{
 .header-bottom{
     flex:2;
     display: flex;
-    justify-content:center;
-
+    justify-content:space-between;
+    gap: 64px;
 }
 
 .header-left{
+    display: flex;
     width: 400px;
-    flex-flow: column wrap;
-    flex-shrink: 1;
+    flex-flow: column;
+    justify-content: flex-start;
 }
 h1{
     font-size: 48px;
     font-weight: bolder;
     color:#F9FAF8;
+    margin: 0;
 }
 
 .second-text{
     font-size: 18px;
     color:#E5E7EB;
+    margin-top:0;
 }
 
 .sign-up{
+    border-radius: 8px;
+    border: 0;
     background: #3882F6;
     color: #E5E7EB;
     font-weight: bold;
-    width: 68px;
-    height: 32px;
+    width: 100px;
+    height: 40px;
 }
 
 .header-right{
     background: grey;
     color: #E5E7EB;
     width: 400px;
-    height: 150px; 
+    height: 100px; 
     display: flex;
     padding: 80px;
     justify-content: center;
     align-items: center;
+}
+
+/*------CODE FOR THE SECOND SECTION----*/
+
+.information{
+    height: 500px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    /*Code for the subtext*/
+
+.info-text{
+    color: #1F2937;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+    /*Code for the cards*/
+
+.cards{
+    display: flex;
+    padding: 0 200px;
+    justify-content: center;
+    gap:25px;
+    text-align: center;
+    color:#373f49d0;
+    font-size: 18px;
+}
+
+.first,
+.second,
+.third,
+.fourth{
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.cards button{
+    width: 180px;
+    height: 180px;
+    border:2px solid #3882F6; 
+    border-radius:16px;
+    background:none;
+ 
+}
+
+.cards p{
+    margin:0;
+    padding: 0;
 }
