@@ -78,6 +78,7 @@ h1{
     border: 0;
     background: #3882F6;
     color: #E5E7EB;
+    font-size: 16px;
     font-weight: bold;
     width: 100px;
     height: 40px;
@@ -169,4 +170,44 @@ h1{
     color:#1F2937;
     font-size: 20px;
     align-self:flex-end;
+}
+
+/*-----CODE FOR THE CALL BUTTON SECTION-----*/
+
+.call-section{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-action{
+    flex:1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    background:#3882F6;
+    margin: 32px 212px;
+}
+
+.call-text{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    flex-shrink: 1;
+    align-content: center;
+    margin: 32px 0;
+    color:#E5E7EB;
+}
+
+.call-text h4{
+    font-size: 26px;
+    margin-bottom: 0;
+}
+.call-text p{
+    margin-top:0;
+}
+.call-action .sign-up{
+    border:2px solid #E5E7EB;
 }
